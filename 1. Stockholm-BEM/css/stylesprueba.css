@@ -53,131 +53,95 @@ body {
     height: 40px;
 }
 
-/* Estilos del grid container */
-/* Estilos del grid container */
 .container {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 6 columnas para el collage */
-    grid-template-rows: repeat(7, 150px); /* Cada fila tiene 150px */
-    gap: 10px;
-    padding: 20px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8,1fr);
   }
   
 /* Diseñamos cada caja según el collage */
 .container__imagen1 {
-grid-column: 1 / 7;
-grid-row: 5 / 7;
+grid-column: 1 / 6;
+grid-row: 1 / 6;
 }
 
 .container__imagen2 {
-grid-column: 1 / 7;
-grid-row: 0 / 7;
+grid-column: 2 / 6;
+grid-row: 1 / 6;
 }
 
 .container__imagen3 {
-grid-column: span 1;
-grid-row: span 2;
+  grid-column: 3 / 6;
+  grid-row: 1 / 6;
 }
 
-.container__imagen4 {
-grid-column: span 2;
-grid-row: span 1;
+.container__imagen4{
+  grid-column: 4 / 6;
+  grid-row: 1 / 6;
 }
 
-.container__imagen5 {
-grid-column: span 3;
-grid-row: span 3;
+.container__imagen5{
+  grid-column: 5 / 7;
+  grid-row: 1 / 6;
 }
 
-.container__imagen6 {
-grid-column: span 1;
-grid-row: span 1;
+.container__imagen6{
+  grid-column: 1 / 7;
+  grid-row: 8 / 8;
 }
 
-.container__imagen7 {
-grid-column: span 2;
-grid-row: span 1;
+.container__imagen7{
+   grid-column: 2 / 7;
+   grid-row: 2 / 8;
 }
 
-.container__imagen8 {
-grid-column: span 1;
-grid-row: span 1;
+.container__imagen8{
+  grid-column: 4 / 7;
+  grid-row: 2 / 8;
 }
 
-.container__imagen9 {
-grid-column: span 2;
-grid-row: span 2;
+.container__imagen9{
+  grid-column: 5 / 7;
+  grid-row: 7 / 8;
+
 }
 
-.container__imagen10 {
-grid-column: span 1;
-grid-row: span 1;
+.container__imagen10{
+  grid-column: 3/ 7;
+  grid-row: 7 / 8;
 }
 
-.container__imagen11 {
-grid-column: span 1;
-grid-row: span 1;
+
+.container__imagen11{
+  grid-column: 1 / 7;
+  grid-row: 7 / 7;
 }
 
-.container__imagen12 {
-grid-column: span 1;
-grid-row: span 2;
+
+.container__imagen12{
+  grid-column: 2/ 7;
+  grid-row: 6 / 8;
 }
 
-.container__imagen13 {
-grid-column: span 2;
-grid-row: span 1;
+.container__imagen13{
+  grid-column: 4 / 7;
+  grid-row: 7 / 7;
 }
 
-.container__imagen14 {
-grid-column: span 1;
-grid-row: span 1;
+
+.container__imagen14{
+  grid-column: 3 / 7;
+  grid-row:  8 / 8;
 }
 
-.container__imagen15 {
-grid-column: span 1;
-grid-row: span 1;
+
+.container__imagen15{
+  grid-column: 1 / 7;
+  grid-row: 7 / 7;
 }
 
-.container__imagen16 {
-grid-column: span 1;
-grid-row: span 1;
-}
 
-.container__imagen17 {
-grid-column: span 3;
-grid-row: span 1;
-}
 
-.container__imagen18 {
-grid-column: span 1;
-grid-row: span 1;
-}
-
-.container__imagen19 {
-grid-column: span 1;
-grid-row: span 1;
-}
-
-.container__imagen20 {
-grid-column: span 1;
-grid-row: span 1;
-}
-
-.container__imagen21 {
-grid-column: span 1;
-grid-row: span 1;
-}
-  
-  /* Aseguramos que las imágenes llenen sus cajas */
-  .container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 8px;
-  }
- 
 /* Footer */
 footer {
     text-align: center;
