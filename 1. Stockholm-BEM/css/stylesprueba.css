@@ -55,91 +55,20 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 60px 60px;
   }
   
 /* Diseñamos cada caja según el collage */
 .container__imagen1 {
-grid-column: 1 / 6;
-grid-row: 1 / 6;
+  grid-column: 1 / 6;
+  grid-row: 1 / 8;
 }
 
-.container__imagen2 {
-grid-column: 2 / 6;
-grid-row: 1 / 6;
-}
-
-.container__imagen3 {
-  grid-column: 3 / 6;
-  grid-row: 1 / 6;
-}
-
-.container__imagen4{
-  grid-column: 4 / 6;
-  grid-row: 1 / 6;
-}
-
-.container__imagen5{
-  grid-column: 5 / 7;
-  grid-row: 1 / 6;
-}
-
-.container__imagen6{
-  grid-column: 1 / 7;
-  grid-row: 8 / 8;
-}
-
-.container__imagen7{
-   grid-column: 2 / 7;
-   grid-row: 2 / 8;
-}
-
-.container__imagen8{
-  grid-column: 4 / 7;
+.container__imagen2{
+  grid-column: 2 / 6;
   grid-row: 2 / 8;
 }
-
-.container__imagen9{
-  grid-column: 5 / 7;
-  grid-row: 7 / 8;
-
-}
-
-.container__imagen10{
-  grid-column: 3/ 7;
-  grid-row: 7 / 8;
-}
-
-
-.container__imagen11{
-  grid-column: 1 / 7;
-  grid-row: 7 / 7;
-}
-
-
-.container__imagen12{
-  grid-column: 2/ 7;
-  grid-row: 6 / 8;
-}
-
-.container__imagen13{
-  grid-column: 4 / 7;
-  grid-row: 7 / 7;
-}
-
-
-.container__imagen14{
-  grid-column: 3 / 7;
-  grid-row:  8 / 8;
-}
-
-
-.container__imagen15{
-  grid-column: 1 / 7;
-  grid-row: 7 / 7;
-}
-
 
 
 /* Footer */
