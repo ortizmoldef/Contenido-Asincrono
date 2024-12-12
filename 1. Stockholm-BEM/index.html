@@ -3,46 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsive</title>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Stockholm</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/Logo-dark.png"  class="logo_oscuro" alt="logo">
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/Logo-dark.png" alt="">
         </div>
-        
-    </header> 
-    <main>
-        <div class="contenedor">
-            <img src="assets/Masonry-list-img-1-500x500.jpg" class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-2-500x500.jpg" class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-3-500x500.jpg" class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-4-500x500.jpg" class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-5-500x500.jpg" class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-6-500x500.jpg" class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-7-500x500.jpg" class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-8-500x500.jpg" class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-9-500x500.jpg" class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-10-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-11-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-12-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-13-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-14-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-15-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-16-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-17-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-18-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-19-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-20-500x500.jpg"class="contenedor_imagen" alt="">
-            <img src="assets/Masonry-list-img-21-500x500.jpg"class="contenedor_imagen" alt="">
+        <div class="header__nav">
+            <nav>
+                <ul>
+                    <li><a href="#">MAIN</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
-    </main>
 
-    <footer>
-        <div class="footer">
-              <img src="assets/Footer-logo.png"  class="footer_logo"  alt="">  
+        <div class="header__logohamburguesa">
+            <img src="assets/icons8-menú.svg" alt="menu">
         </div>
+
+    </header>
+    <main class="main">
+        <div class="container">
+                <img src="assets/Masonry-list-img-1-500x500.jpg" class= "container__img"  alt="Image 1">
+                <img src="assets/Masonry-list-img-2-500x500.jpg" class="container__img" alt="Image 2">
+                <img src="assets/Masonry-list-img-3-500x1000.jpg" class="container__img container2x1" alt="Image 3">
+                <img src="assets/Masonry-list-img-4-500x500.jpg" class="container__img" alt="Image 4">
+                <img src="assets/Masonry-list-img-5-1000x1000.jpg" class="container__img container2x2" alt="Image 5">
+                <img src="assets/Masonry-list-img-6-500x500.jpg" class="container__img" alt="Image 6">
+                <img src="assets/Masonry-list-img-7-500x500.jpg" class="container__img" alt="Image 7">
+                <img src="assets/Masonry-list-img-8-500x500.jpg" class="container__img" alt="Image 8">
+                <img src="assets/Masonry-list-img-9-1000x1000.jpg" class="container__img container2x2" alt="Image 9">
+                <img src="assets/Masonry-list-img-10-500x500.jpg" class="container__img" alt="Image 10">
+                <img src="assets/Masonry-list-img-11-500x500.jpg" class="container__img" alt="Image 11">
+                <img src="assets/Masonry-list-img-12-500x1000.jpg" class="container__img container2x1" alt="Image 12">
+                <img src="assets/Masonry-list-img-13-500x500.jpg" class="container__img" alt="Image 13">
+                <img src="assets/Masonry-list-img-14-500x500.jpg" class="container__img" alt="Image 14">
+                <img src="assets/Masonry-list-img-15-500x500.jpg" class="container__img" alt="Image 15">
+                <img src="assets/Masonry-list-img-16-500x500.jpg" class="container__img" alt="Image 16">
+                <img src="assets/Masonry-list-img-17-1000x500.jpg" class="container__img container1x2" alt="Image 17">
+                <img src="assets/Masonry-list-img-18-500x500.jpg" class="container__img" alt="Image 18">
+                <img src="assets/Masonry-list-img-19-500x500.jpg" class="container__img" alt="Image 19">
+                <img src="assets/Masonry-list-img-20-500x500.jpg" class="container__img" alt="Image 20">
+                <img src="assets/Masonry-list-img-21-500x500.jpg" class="container__img" alt="Image 21">
+          </div>        
+    </main>
+    <footer class="footer">
+        <div class="footer_logo">
+            <img src="assets/Footer-logo.png" class="logo_footer" alt="">
+            <p class="footer_p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor delectus ab repudiandae tempore dolore excepturi fugiat dignissimos praesentium, impedit nemo explicabo eius quos animi in doloremque consequatur, est dolorum.</p>
+        </div>
+
+        <div class="footer_copy">
+            <p>© 2021 Qode Interactive, All Rights Reserved</p>
+        </div>   
     </footer>
 </body>
 </html>
