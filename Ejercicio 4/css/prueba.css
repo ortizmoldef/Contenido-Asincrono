@@ -1,0 +1,99 @@
+/* Reset básico para quitar márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;  /* Fondo oscuro */
+    display: flex;
+    justify-content: flex-start;  /* Alinea al inicio (izquierda) */
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Necesario para el fondo */
+    overflow: hidden;  /* Asegura que no haya desplazamiento no deseado */
+}
+
+/* Estilo para el fondo */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;  /* Asegura que esté detrás del contenido */
+    opacity: 0;   /* Comienza invisible */
+    transition: opacity 0.5s ease; /* Transición para hacer que el fondo aparezca suavemente */
+}
+
+/* Estilo para el contenedor 'main' */
+main {
+    padding: 50px;
+    display: flex;  /* Hace que las palabras se coloquen en fila (horizontalmente) */
+    flex-wrap: wrap;
+    gap: 20px;  /* Espacio entre las palabras */
+    align-items: center; /* Alinea verticalmente las palabras */
+    justify-content: center;
+}
+
+/* Estilo común para las palabras (tanto 'word' como 'small') */
+.word, .small {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0;
+    cursor: pointer;  /* Hace que las palabras sean clicables */
+    transition: all 0.3s ease; /* Transición suave para cambios de color y opacidad */
+    position: relative;
+}
+
+/* Estilo para las palabras cuando están "desactivadas" */
+.word.inactive, .small.inactive {
+    opacity: 0.3; /* Baja la opacidad de las palabras inactivas */
+}
+
+/* Estilo para la palabra activa (en blanco) */
+.word.active, .small.active {
+    color: white;  /* Se pone en blanco */
+    font-size: 40px;  /* Se agranda un poco la fuente cuando está activa */
+}
+
+/* Efecto de hover (cuando pasas el ratón por encima de la palabra) */
+.word:hover, .small:hover {
+    color: white;  /* La palabra se pone en blanco cuando el ratón pasa por encima */
+    opacity: 1;    /* La palabra se mantiene visible */
+}
+
+/* Efecto para mostrar el fondo correspondiente a la palabra activa */
+.word.active + p, .small.active + p {
+    display: block;
+}
+
+/* Clase 'small' para hacer que las palabras se reduzcan */
+.small {
+    font-size: 10px;
+}
+
+/* Media Queries para pantallas más pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+    .word, .small {
+        font-size: 6vw;  /* Aumenta el tamaño de la fuente en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .word, .small {
+        font-size: 8vw;  /* Aumenta aún más el tamaño de la fuente en pantallas muy pequeñas */
+    }
+    main {
+        padding: 10px;  /* Reduce el padding en pantallas pequeñas */
+    }
+}
